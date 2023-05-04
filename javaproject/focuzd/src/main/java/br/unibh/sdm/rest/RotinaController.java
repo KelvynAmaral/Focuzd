@@ -43,7 +43,7 @@ public class RotinaController {
     }
 
     @GetMapping(value = "{id}")
-    public Rotina getRotinaById(@PathVariable Long id) throws Exception {
+    public Rotina getRotinaById(@PathVariable String id) throws Exception {
         if (!ObjectUtils.isEmpty(id)) {
             return rotinaService.getRotinaById(id);
         }
@@ -57,14 +57,14 @@ public class RotinaController {
     }
 
     @PutMapping(value = "{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Rotina updateRotina(@PathVariable Long id,
+    public Rotina updateRotina(@PathVariable String id,
             @RequestBody @NotNull Rotina rotina) throws Exception {
         return rotinaService.saveRotina(rotina);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "{id}")
-    public boolean updateRotina(@PathVariable long id) throws Exception {
+    public boolean updateRotina(@PathVariable String id) throws Exception {
         rotinaService.deleteRotina(id);
         return true;
     }

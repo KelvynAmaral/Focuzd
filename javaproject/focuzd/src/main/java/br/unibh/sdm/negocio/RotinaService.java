@@ -9,7 +9,7 @@ import br.unibh.sdm.entidade.Rotina;
 import org.apache.commons.collections4.IteratorUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Service;
 
 import br.unibh.sdm.persistencia.RotinaRepository;
@@ -42,7 +42,7 @@ public class RotinaService {
         return IteratorUtils.toList(lista.iterator());
     }
 
-    public Rotina getRotinaById(long id) {
+    public Rotina getRotinaById(String id) {
         if (logger.isInfoEnabled()) {
             logger.info("Buscando rotinas com o codigo {}", id);
         }
@@ -60,7 +60,7 @@ public class RotinaService {
         return this.rotinaRepo.save(rotina);
     }
 
-    public void deleteRotina(Long id) {
+    public void deleteRotina(String id) {
         if (logger.isInfoEnabled()) {
             logger.info("Excluindo Cotacao com id {}", id);
         }
