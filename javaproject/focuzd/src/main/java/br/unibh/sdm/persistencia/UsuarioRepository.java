@@ -8,8 +8,8 @@ import org.springframework.data.repository.CrudRepository;
 import br.unibh.sdm.entidade.Usuario;
 
 @EnableScan()
-public interface UsuarioRepository extends CrudRepository<Usuario, Long> {
+public interface UsuarioRepository extends CrudRepository<Usuario, String> {
 
-    List<Usuario> findByid(Long id);
+    List<Usuario> findByid(String id);
 
 }

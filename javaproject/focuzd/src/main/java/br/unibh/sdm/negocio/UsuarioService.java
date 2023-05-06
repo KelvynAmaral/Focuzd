@@ -41,7 +41,7 @@ public class UsuarioService {
         return IteratorUtils.toList(lista.iterator());
     }
 
-    public Usuario getUsuarioById(long id) {
+    public Usuario getUsuarioById(String id) {
         if (logger.isInfoEnabled()) {
             logger.info("Buscando Usuario com o codigo {}", id);
         }
@@ -59,7 +59,7 @@ public class UsuarioService {
         return this.usuarioRepo.save(usuario);
     }
 
-    public void deleteUsuario(Long id) {
+    public void deleteUsuario(String id) {
         if (logger.isInfoEnabled()) {
             logger.info("Excluindo Usuario com id {}", id);
         }
