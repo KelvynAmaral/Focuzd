@@ -4,7 +4,6 @@ br\unibh\sdm\entidade\Rotina.class
 br\unibh\sdm\negocio\RotinaService.class
 br\unibh\sdm\negocio\UsuarioService.class
 br\unibh\sdm\persistencia\DynamoDBConfig.class
-br\unibh\sdm\App.class
 br\unibh\sdm\Application.class
 br\unibh\sdm\rest\RotinaController.class
 br\unibh\sdm\persistencia\RotinaRepository.class

@@ -34,7 +34,8 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
-import br.unibh.sdm.entidade.*;
+
+import br.unibh.sdm.entidades.*;
 import br.unibh.sdm.persistencia.*;
 
 @RunWith(SpringRunner.class)
