@@ -7,6 +7,8 @@ import static org.junit.Assert.assertNotNull;
 import java.util.List;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
 
 import java.util.Optional;
 
@@ -32,7 +34,8 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
-import br.unibh.sdm.entidade.*;
+
+import br.unibh.sdm.entidades.*;
 import br.unibh.sdm.persistencia.*;
 
 @RunWith(SpringRunner.class)
@@ -71,33 +74,45 @@ public class RotinaTest {
     private RotinaRepository repository;
 
     @Test
-    public void testeCriacao() throws ParseException {
+    public void teste1Criacao() throws ParseException {
         LOGGER.info("Gerando teste...");
-        Rotina r1 = new Rotina("123", "11:30", "Segunda-Feira", df.parse("11/08/2023"));
+        Rotina r1 = new Rotina("09", "09:30", "Segunda-Feira", df.parse("11/08/2021"));
+        Rotina r2 = new Rotina("10", "10:30", "Segunda-Feira", df.parse("13/02/2022"));
+        Rotina r3 = new Rotina("11", "11:30", "Segunda-Feira", df.parse("17/05/2022"));
+        Rotina r4 = new Rotina("12", "13:30", "Segunda-Feira", df.parse("19/08/2022"));
+        Rotina r5 = new Rotina("13", "10:30", "Segunda-Feira", df.parse("12/02/2023"));
+        Rotina r6 = new Rotina("14", "11:30", "Segunda-Feira", df.parse("12/06/2023"));        
         repository.save(r1);
+        repository.save(r2);
+        repository.save(r3);
+        repository.save(r4);
+        repository.save(r5);
+        repository.save(r6);
         Iterable<Rotina> lista = repository.findAll();
         assertNotNull(lista.iterator());
         for (Rotina rotina : lista){
             LOGGER.info(rotina.toString());
         }
+        
         LOGGER.info("Pesquisando rotina");
-        Optional<Rotina> result = repository.findById("123");
+        Optional<Rotina> result = repository.findById("09");
         if (result.isPresent()){
             LOGGER.info(result.get().toString());
         }
         assertNotNull(null, result.get());
     }
-        @Test
-	    public void teste2Exclusao() throws ParseException {
-		LOGGER.info("Excluindo objetos...");
-		Iterable<Rotina> result = repository.findAll();
-        for(Rotina r: result){
-            repository.delete(r);
-        }
-        Optional<Rotina> exclude = repository.findById("123");
-        
-        assertEquals(exclude.isPresent(), false);
-        
+
+    @Test
+    public void teste2Exclusao() throws ParseException {
+    LOGGER.info("Excluindo objetos...");
+    Iterable<Rotina> result = repository.findAll();
+    for(Rotina r: result){
+        repository.delete(r);
     }
+    Optional<Rotina> exclude = repository.findById("123");
+    
+    assertEquals(exclude.isPresent(), false);
+    
+}
 
 }

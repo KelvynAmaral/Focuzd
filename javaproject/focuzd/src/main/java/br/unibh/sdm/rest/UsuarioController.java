@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.unibh.sdm.entidade.Usuario;
+import br.unibh.sdm.entidades.Usuario;
 import br.unibh.sdm.negocio.UsuarioService;
 
 /**
@@ -43,7 +43,7 @@ public class UsuarioController {
     }
 
     @GetMapping(value = "{id}")
-    public Usuario getUsuarioById(@PathVariable Long id) throws Exception {
+    public Usuario getUsuarioById(@PathVariable String id) throws Exception {
         if (!ObjectUtils.isEmpty(id)) {
             return usuarioService.getUsuarioById(id);
         }
@@ -64,7 +64,7 @@ public class UsuarioController {
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "{id}")
-    public boolean updateUsuario(@PathVariable long id) throws Exception {
+    public boolean updateUsuario(@PathVariable String id) throws Exception {
         usuarioService.deleteUsuario(id);
         return true;
     }

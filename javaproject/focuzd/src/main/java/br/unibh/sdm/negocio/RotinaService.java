@@ -5,13 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import br.unibh.sdm.entidade.Rotina;
 import org.apache.commons.collections4.IteratorUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-//import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Service;
 
+import br.unibh.sdm.entidades.Rotina;
 import br.unibh.sdm.persistencia.RotinaRepository;
 
 /**
