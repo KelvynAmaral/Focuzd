@@ -4,8 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.List;
 import java.util.Optional;
 
 import org.junit.Assert;
@@ -34,7 +32,6 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 
 import br.unibh.sdm.entidades.*;
 import br.unibh.sdm.persistencia.*;
-import nonapi.io.github.classgraph.json.Id;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { PropertyPlaceholderAutoConfiguration.class, UsuarioTest.DynamoDBConfig.class })
