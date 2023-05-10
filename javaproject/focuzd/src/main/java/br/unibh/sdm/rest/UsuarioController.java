@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.unibh.sdm.entidades.Usuario;
+import br.unibh.sdm.entidade.Usuario;
 import br.unibh.sdm.negocio.UsuarioService;
 
 /**
@@ -57,7 +57,7 @@ public class UsuarioController {
     }
 
     @PutMapping(value = "{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Usuario updateUsuario(@PathVariable Long id,
+    public Usuario updateUsuario(@PathVariable String id,
             @RequestBody @NotNull Usuario usuario) throws Exception {
         return usuarioService.saveUsuario(usuario);
     }

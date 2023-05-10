@@ -1,4 +1,4 @@
-package br.unibh.sdm.entidades;
+package br.unibh.sdm.entidade;
 
 import java.util.Date;
 

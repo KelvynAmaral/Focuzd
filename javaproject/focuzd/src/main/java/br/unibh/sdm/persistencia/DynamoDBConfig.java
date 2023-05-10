@@ -13,10 +13,6 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 
-
-
-
-
 /**
  * Configurações para acessar o AWS DynamoDB
  *  <br>
