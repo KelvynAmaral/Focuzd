@@ -68,6 +68,6 @@ public class UsuarioTest {
     @Test
     public void teste01CriarUsuario() throws ParseException {
         LOGGER.info("Criando usuário");
-        Usuario u = new Usuario( "João", "");
+        Usuario u = new Usuario( "João", "joaozinho@teste.com");
         repository.save(u);}
 }
