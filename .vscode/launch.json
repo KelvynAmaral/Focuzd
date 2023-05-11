@@ -26,7 +26,11 @@
             "mainClass": "br.unibh.sdm.Application",
             "projectName": "Focuzd",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "vmArgs": "-Dspring.config.location=C:\\Users\\Henrique Souza\\Desktop\\Focuzd\\javaproject\\focuzd"
+=======
+            "vmArgs": "-Dspring.config.location=D:\\GitHub\\"
+>>>>>>> Stashed changes
 =======
             "vmArgs": "-Dspring.config.location=D:\\GitHub\\"
 >>>>>>> Stashed changes
