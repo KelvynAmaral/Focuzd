@@ -115,8 +115,4 @@ public class UsuarioTest {
 		LOGGER.info("Exclusão feita com sucesso");
 	}
 
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
