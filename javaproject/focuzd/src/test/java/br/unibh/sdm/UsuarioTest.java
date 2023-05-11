@@ -1,11 +1,9 @@
 package br.unibh.sdm;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.List;
+
+
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -38,7 +36,6 @@ import br.unibh.sdm.persistencia.UsuarioRepository;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UsuarioTest {
     private static Logger LOGGER = LoggerFactory.getLogger(UsuarioTest.class);
-    private SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
     
     @Configuration
     @EnableDynamoDBRepositories(basePackageClasses = {UsuarioRepository.class})
