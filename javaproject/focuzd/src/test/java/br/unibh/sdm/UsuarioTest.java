@@ -100,19 +100,25 @@ public class UsuarioTest {
 		u1.setId("1");
 		repository.delete(u1);
 
-		Usuario u2 = new Usuario();
-		u2.setId("2");
-		repository.delete(u2);
-
-		Usuario u3 = new Usuario();
-		u3.setId("3");
-		repository.delete(u3);
-
-
 		Optional<Usuario> result = repository.findById("1");
 		Assert.assertFalse(result.isPresent());
 		
 		LOGGER.info("Exclusão feita com sucesso");
 	}
+
+	@Test
+    public void teste3ExclusaoTotal() throws ParseException {
+    LOGGER.info("Excluindo objetos...");
+    Iterable<Usuario> result = repository.findAll();
+    for(Usuario u: result){
+        repository.delete(u);
+    }
+    Optional<Usuario> exclude = repository.findById("123");
+    
+    assertEquals(exclude.isPresent(), false);
+
+	LOGGER.info("Exclusão total dos dados feita com sucesso");
+    
+}
 
 }

@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 
 
 import java.util.Optional;
-
+import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -105,6 +105,19 @@ public class RotinaTest {
     @Test
     public void teste2Exclusao() throws ParseException {
     LOGGER.info("Excluindo objetos...");
+    Rotina r1 = new Rotina();
+    r1.setId("09");
+    repository.delete(r1);
+
+    Optional<Rotina> result = repository.findById("09");
+    Assert.assertFalse(result.isPresent());
+    
+    LOGGER.info("Exclusão feita com sucesso");
+}
+
+    @Test
+    public void teste3ExclusaoTotal() throws ParseException {
+    LOGGER.info("Excluindo objetos...");
     Iterable<Rotina> result = repository.findAll();
     for(Rotina r: result){
         repository.delete(r);
@@ -112,7 +125,10 @@ public class RotinaTest {
     Optional<Rotina> exclude = repository.findById("123");
     
     assertEquals(exclude.isPresent(), false);
+    LOGGER.info("Exclusão total dos dados feita com sucesso");
     
 }
+
+
 
 }

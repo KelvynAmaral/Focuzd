@@ -1,28 +1,10 @@
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\negocio\UsuarioService.java
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidade\Usuario.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\negocio\RotinaService.java
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidade\Rotina.java
-=======
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\negocio\RotinaService.java
->>>>>>> Stashed changes
-=======
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\negocio\RotinaService.java
->>>>>>> Stashed changes
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\persistencia\DynamoDBConfig.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\persistencia\UsuarioRepository.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\Application.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\rest\RotinaController.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\rest\UsuarioController.java
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidades\Rotina.java
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidades\Usuario.java
->>>>>>> Stashed changes
-=======
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidades\Rotina.java
-c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\entidades\Usuario.java
->>>>>>> Stashed changes
 c:\Users\Henrique Souza\Desktop\Focuzd\javaproject\focuzd\src\main\java\br\unibh\sdm\persistencia\RotinaRepository.java
