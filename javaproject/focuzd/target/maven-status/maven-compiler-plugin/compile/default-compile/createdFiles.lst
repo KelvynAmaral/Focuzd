@@ -1,9 +1,9 @@
-br\unibh\sdm\entidade\Usuario.class
 br\unibh\sdm\rest\UsuarioController.class
-br\unibh\sdm\entidade\Rotina.class
+br\unibh\sdm\entidades\Rotina.class
 br\unibh\sdm\negocio\RotinaService.class
 br\unibh\sdm\negocio\UsuarioService.class
 br\unibh\sdm\persistencia\DynamoDBConfig.class
+br\unibh\sdm\entidades\Usuario.class
 br\unibh\sdm\Application.class
 br\unibh\sdm\rest\RotinaController.class
 br\unibh\sdm\persistencia\RotinaRepository.class
