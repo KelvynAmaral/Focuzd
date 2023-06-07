@@ -1,6 +1,10 @@
 # Focuzd
 ## Gerenciador de rotinas
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/89614811/244191292-d075e270-a3de-4ed1-8cbb-629aaf45b169.png" width="0px" />
+</div>
+
 RFs (Requisitos funcionais)
  Deve ser possível se cadastrar;
  Deve ser possível se autenticar;
