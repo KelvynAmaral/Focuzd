@@ -1,0 +1,13 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.unibh</groupId>
+    <artifactId>sdm</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>rotina</module>
+        <module>prontuario</module>
+    </modules>
+
+</project>

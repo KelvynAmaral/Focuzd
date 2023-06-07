@@ -1,0 +1,5 @@
+br\unibh\sdm\prontuario\Application.class
+br\unibh\sdm\prontuario\negocio\ProntuarioService.class
+br\unibh\sdm\prontuario\rest\ProntuarioController.class
+br\unibh\sdm\prontuario\persistencia\ProntuarioRepository.class
+br\unibh\sdm\prontuario\entidades\Prontuario.class
