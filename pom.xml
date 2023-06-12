@@ -1,13 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>br.unibh</groupId>
-    <artifactId>sdm</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>rotina</module>
-        <module>prontuario</module>
-    </modules>
-
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <groupId>br.unibh</groupId>
+      
+  <artifactId>sdm</artifactId>
+      
+  <version>1.0-SNAPSHOT</version>
+      
+  <packaging>pom</packaging>
+      
+  <modules>
+            
+    <module>rotina</module>
+            
+    <module>prontuario</module>
+          
+    <module>atividades</module>
+      
+  </modules>
+  
 </project>

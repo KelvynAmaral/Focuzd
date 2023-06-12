@@ -1,0 +1,5 @@
+br\unibh\sdm\atividade\negocio\AtividadeService.class
+br\unibh\sdm\atividade\rest\AtividadeController.class
+br\unibh\sdm\atividade\persistencia\AtividadeRepository.class
+br\unibh\sdm\atividade\Application.class
+br\unibh\sdm\atividade\entidades\Atividade.class
