@@ -1,6 +1,16 @@
-# Focuzd
-## Gerenciador de rotinas
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/89614811/244193389-610222cd-6289-4bf0-afa7-eff5ac13b510.png" width="400px" />
+</div>
 
+# FOCUZD | Gerenciador de rotinas
+### Organize sua rotina com facilidade
+
+Nosso aplicativo é a solução ideal para ajudar essas pessoas gerenciar suas tarefas diárias e organizar seus compromissos.  Além disso, o aplicativo oferece ferramentas de análise para que os usuários possam monitorar seu desempenho e avaliar áreas onde podem melhorar. 
+
+Com a ajuda do nosso aplicativo, as pessoas podem ter uma vida mais organizada, eficiente e menos estressante.
+
+
+## Requisitos
 RFs (Requisitos funcionais)
  Deve ser possível se cadastrar;
  Deve ser possível se autenticar;
