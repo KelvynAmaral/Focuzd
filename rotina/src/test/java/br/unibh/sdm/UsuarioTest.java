@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Optional;
 
 import org.junit.Assert;
@@ -37,8 +38,8 @@ import br.unibh.sdm.persistencia.*;
 @SpringBootTest(classes = { PropertyPlaceholderAutoConfiguration.class, UsuarioTest.DynamoDBConfig.class })
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UsuarioTest {
-	private static Logger LOGGER = LoggerFactory.getLogger(UsuarioTest.class);
-	//private SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+	private static final Logger LOGGER = LoggerFactory.getLogger(UsuarioTest.class);
+	private final SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 	@Configuration
 	@EnableDynamoDBRepositories(basePackageClasses = UsuarioRepository.class)

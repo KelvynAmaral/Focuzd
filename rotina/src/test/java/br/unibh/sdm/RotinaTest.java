@@ -42,8 +42,8 @@ import br.unibh.sdm.persistencia.*;
 @SpringBootTest(classes = { PropertyPlaceholderAutoConfiguration.class, RotinaTest.DynamoDBConfig.class })
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class RotinaTest {
-    private static Logger LOGGER = LoggerFactory.getLogger(RotinaTest.class);
-    private SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+    private static final Logger LOGGER = LoggerFactory.getLogger(RotinaTest.class);
+    private final SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
     @Configuration
     @EnableDynamoDBRepositories(basePackageClasses = { RotinaRepository.class })
@@ -76,12 +76,12 @@ public class RotinaTest {
     @Test
     public void teste1Criacao() throws ParseException {
         LOGGER.info("Gerando teste...");
-        Rotina r1 = new Rotina("09", "09:30", "Segunda-Feira", df.parse("11/08/2021"));
+        Rotina r1 = new Rotina("09", "10:30", "Segunda-Feira", df.parse("13/02/2022"));
         Rotina r2 = new Rotina("10", "10:30", "Segunda-Feira", df.parse("13/02/2022"));
         Rotina r3 = new Rotina("11", "11:30", "Segunda-Feira", df.parse("17/05/2022"));
         Rotina r4 = new Rotina("12", "13:30", "Segunda-Feira", df.parse("19/08/2022"));
         Rotina r5 = new Rotina("13", "10:30", "Segunda-Feira", df.parse("12/02/2023"));
-        Rotina r6 = new Rotina("14", "11:30", "Segunda-Feira", df.parse("12/06/2023"));        
+        Rotina r6 = new Rotina("14", "11:30", "Segunda-Feira", df.parse("12/06/2023"));
         repository.save(r1);
         repository.save(r2);
         repository.save(r3);
